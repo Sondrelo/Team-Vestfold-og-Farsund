@@ -1,2 +1,1 @@
-# Team-Vestfold-og-Eivind
-Class workgroup IS105
+# Team-Vestfold-og-Farsund
