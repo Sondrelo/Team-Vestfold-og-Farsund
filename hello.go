@@ -8,4 +8,5 @@ func main() {
 	fmt.Println("Jarl")
 	fmt.Println("Oyvind")
 	fmt.Println("Eivind")
+	fmt.Prinln("Team-Vestfold-og-Farsund")
 }
