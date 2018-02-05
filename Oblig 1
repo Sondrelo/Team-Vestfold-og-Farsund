@@ -1,8 +1,75 @@
+
+
+1. Fyll ut manglende tall i tabell
+
+
 Binære tall              Hexadesimaltall	      Desimaltall
 1101	                   0xD	                         13
 110111101010	           DEA	                         3562 
 1010111100110100	   0xAF34	                44852
 1111111111111111	   FFFF 	                65535
 10001011110001010 	   1178A	                71562
+
+A)
+B)
+
+2. Forstå algoritmer og utføre “benchmark”-tester på koden
+
+Oppgave A) 
+
+func Bubble_sort_modified(list []int) {
+	n := len(list)
+	swapped := true
+	for swapped {
+		swapped = false
+		for i := 1; i < n-1; i++ {
+			if list[i-1] > list[i] {
+				// swap values using Go's tuple assignment
+				list[i], list[i-1] = list[i-1], list[i]
+				swapped = true
+			}
+		}
+	}
+
+
+}
+
+Oppgave B)
+
+// Skriv "benchmark"-tester for benchmarkBSortModified funksjonen
+// Skriv en ny testfunksjon benchmarkBSortModified
+func BenchmarkBSortModified100(b *testing.B) {
+	benchmarkBSortModified(100, b)
+}
+
+func BenchmarkBSortModified1000(b *testing.B) {
+	benchmarkBSortModified(1000, b)
+}
+
+func BenchmarkBSortModified10000(b *testing.B) {
+	benchmarkBSortModified(10000, b)
+}
+
+func benchmarkBSortModified(i int, b *testing.B) {
+	for j := 0; j < b.N; j++ {
+		b.StopTimer()
+		values := perm(i)
+		b.StartTimer()
+		Bubble_sort_modified(values)
+	}
+  
+  Oppgave C)
+  
+  Benchmark	ns/op
+BenchmarkBSortModified100-4               100000	22545
+BenchmarkBSortModified1000-4                1000	1489716
+BenchmarkBSortModified10000-4                 10	212672260
+BenchmarkBSort100-4                       100000	19470
+BenchmarkBSort1000-4                        1000	1439749
+BenchmarkBSort10000-4                         10         	213916890
+BenchmarkQSort100-4                       500000	4858
+BenchmarkQSort1000-4                       30000	59841
+BenchmarkQSort10000-4                       1000	1791985
+
 
 
