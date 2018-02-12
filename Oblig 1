@@ -159,8 +159,8 @@ ved SIGINT signal kommando CTRL + C og CTRL + Break får vi exit status 2
 interrupt kommandoen "delete" fungerer ikke i vår terminal.
 
 
-Oppgave 4
-a) Vi har produsert følgende kode: for funksjon IterateOverASCIIStringLiteral
+Oppgave 4 A og B 
+- Kode for iterateOverExtendedASCIIStringLiteral() og ExtendedASCIIText
 
 package main
 
@@ -168,36 +168,38 @@ import (
 	"fmt"
 )
 
-//comment
-const ascii = "\x80\x81\x82\x83\x84\x85\x86\x87\x88\x89\x8a\x8b\x8c\x8d\x8e\x8f\x90\x91\x92\x93\x94\x95\x96\x97\x98\x99\x9a\x9b\x9c\x9d\x9e\x9f\xa0\xa1\xa2\xa3\xa4\xa5\xa6\xa7\xa8\xa9\xaa\xab\xac\xad\xae\xaf\xb0\xb1\xb2\xb3\xb4\xb5\xb6\xb7\xb8\xb9\xba\xbb\xbc\xbd\xbe\xbf\xc0\xc1\xc2\xc3\xc4\xc5\xc6\xc7\xc8\xc9\xca\xcb\xcc\xcd\xce\xcf\xd0\xd1\xd2\xd3\xd4\xd5\xd6\xd7\xd8\xd9\xda\xdb\xdc\xdd\xde\xdf\xe0\xe1\xe2\xe3\xe4\xe5\xe6\xe7\xe8\xe9\xea\xeb\xec\xed\xee\xef\xf0\xf1\xf2\xf3\xf4\xf5\xf6\xf7\xf8\xf9\xfa\xfb\xfc\xfd\xfe\xff" +
-	` !"#$%&'()*+,-./0123456789:;<=>?` +
-	`@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_` +
-	"`abcdefghijklmnopqrstuvwxyz{|}~\x7f"
-
-
+const ascii = "\x22\x20\x80\x20\xF7\x20\xBE\x20\x64\x6F\x6C\x6C\x61\x72\x20\x22"
 
 func main() {
-	IterateOverASCIIStringLiteral(ascii)
+	iterateOverExtendedASCIIStringLiteral()
+	ExtendedASCIIText(ascii)
 }
-func IterateOverASCIIStringLiteral(sl string) {
-	for i := 0; i < len(sl); i++ {
-		fmt.Printf("%X %+q %b \n", sl[i], sl[i], sl[i])
+	
+func iterateOverExtendedASCIIStringLiteral(){
+	for i := 128; i <= 255; i++ {
+		fmt.Printf("%X %c %b \n", i, i, i)
 	}
 }
 
-utskriften er som v. eksempel:
-3E > 111110
-BA º 10111010
-BB » 10111110
-BF ¿ 10111111
-C0 À 11000000
-C1 Á 11000001
+func ExtendedASCIIText(tekst string){
 
+	a := tekst
+	for i := 0; i < len(a); i++ {
+		fmt.Printf("%c", a[i])
 
+	}
+}
+
+A)
  "analyser utskriften (spesielt for bytes fra 0x80 til 0x9F)"
  
- Vi ser av utskriften at bytes fra 0x80 til 0xFF skriver Unicode
- samt Hexadec fra 10000000 til 11111111
+ Vi ser av utskriften at bytes fra 0x80 til 0xFF skriver Unicode fra Extended Ascii table. Samtlige gruppemedlemmer bruker lignende
+ windows datamaskiner og får ikke presentert symbolene. Hadde vi hatt Mac eller annen maskin som kan lese ISO 8859-1 ville vi sett
+ symbolene.
+ 
+B) 
+funksjonen ExtendedASCIIText () skriver " € ÷ ¾ dollar ". Våre datamaskiner og samtlige terminaler vil ikke skrive EUROtegn.
+
 
 
 
