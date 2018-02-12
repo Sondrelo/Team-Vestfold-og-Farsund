@@ -160,6 +160,7 @@ interrupt kommandoen "delete" fungerer ikke i vår terminal.
 
 
 Oppgave 4 A og B 
+--------------------------------------------------------------------------------------------------------------------------
 - Kode for iterateOverExtendedASCIIStringLiteral() og ExtendedASCIIText
 
 package main
