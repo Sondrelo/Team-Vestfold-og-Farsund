@@ -8,14 +8,21 @@ Binære tall              Hexadesimaltall	      Desimaltall
 1111111111111111	   FFFF 	                65535
 10001011110001010 	   1178A	                71562
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
 OPPGAVE A
-I det hexadesimale tallsystemet har vi 16 forskjellige sifre; 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F. Dette innebærer at én posisjon i det binære systemet tilsvarer 1 bokstav eller et tall i hex. Har vi et lengre binært tall, kan vi dermed dele dette inn i grupper på fire sifre og regne om hvert siffer for seg til hex. F.eks.: 
+I det hexadesimale tallsystemet har vi 16 forskjellige sifre; 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F. 
+Dette innebærer at én posisjon i det binære systemet tilsvarer 1 bokstav eller et tall i hex. Har vi et lengre binært tall,
+kan vi dermed dele dette inn i grupper på fire sifre og regne om hvert siffer for seg til hex. F.eks.: 
+
 Bin	1101	0010	1010	11010010
 Hex	D	2	A	D2
 Slik går man fra binært til hexadesimal.
 
-Den enkleste måten å gå fra et heksadesimalt tall til et binært tall er ved å rett og slett se på hvert enkelt siffer i det heksadesimale tallet og finne det tilsvarende binære tallet, for så å slå de binære tallene vi har funnet sammen i akkurat den samme rekkefølgen som de sto i det heksadesimale tallet. 
+Den enkleste måten å gå fra et heksadesimalt tall til et binært tall er ved å rett og slett se på hvert enkelt siffer 
+i det heksadesimale tallet og finne det tilsvarende binære tallet, 
+for så å slå de binære tallene
+vi har funnet sammen i akkurat den samme rekkefølgen som de sto i det heksadesimale tallet. 
+
 Eks: 
 Hex: B		4	A	6
 Bin: 1011	100 	1010	110
@@ -46,7 +53,7 @@ Posisjon	Siffer	Utregning
 Summen av verdiene er nå:
  32 + 8 + 2 = 42(10) = 101010(2)	
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------
 OPPGAVE B
 Hexadesimal til desimal
 Utregningen fra et desimalt tall til et heksadesimalt tall følger de samme linjene som konvertering
