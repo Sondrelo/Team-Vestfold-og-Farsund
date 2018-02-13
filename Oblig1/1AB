@@ -1,0 +1,74 @@
+1. Fyll ut manglende tall i tabell
+
+
+Binære tall              Hexadesimaltall	      Desimaltall
+1101	                   0xD	                         13
+110111101010	           DEA	                         3562 
+1010111100110100	   0xAF34	                44852
+1111111111111111	   FFFF 	                65535
+10001011110001010 	   1178A	                71562
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+OPPGAVE A
+I det hexadesimale tallsystemet har vi 16 forskjellige sifre; 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F. Dette innebærer at én posisjon i det binære systemet tilsvarer 1 bokstav eller et tall i hex. Har vi et lengre binært tall, kan vi dermed dele dette inn i grupper på fire sifre og regne om hvert siffer for seg til hex. F.eks.: 
+Bin	1101	0010	1010	11010010
+Hex	D	2	A	D2
+Slik går man fra binært til hexadesimal.
+
+Den enkleste måten å gå fra et heksadesimalt tall til et binært tall er ved å rett og slett se på hvert enkelt siffer i det heksadesimale tallet og finne det tilsvarende binære tallet, for så å slå de binære tallene vi har funnet sammen i akkurat den samme rekkefølgen som de sto i det heksadesimale tallet. 
+Eks: 
+Hex: B		4	A	6
+Bin: 1011	100 	1010	110
+
+For å gjøre om desimaltall til et binært tall så er det en enkel algoritme. 
+Del det gitte tallet på to (heltalsdivisjon). Får vi rest?
+– Ja: skriv ned resten (alltid 1 for binære tall)
+– Nei: skriv 0
+• Start på toppen igjen, helt til svaret på heltallsdivisjonen er 0
+Eks: 
+83:2 = 41, (+0.5) Dette tilsvarer en rest, og skriver derfor 1.
+41:2 = 20 (+0.5) Dette tilsvarer en rest, skriver derfor 1
+20:2 = 10 Ingen rest og blir derfor 0. 
+
+For å gjøre et binært tall til desimaltall så innebærer det samme prinsipp, bare motsatt. 
+Det binære tallsystemet har grunntallet 2, og består kun av sifrene 0 og 1. Vi bruker igjen formelen
+verdi = siffer ∗ grunntallposisjon.
+Eksempel:
+101010(2)
+Posisjon	Siffer	Utregning
+0		0	0*2(0) = 0*1= 0(10)
+1		1	1*2(1) = 1*2= 2(10)
+2		0	0*2(2) = 0*4 = 0(10)
+3		1	1*2(3) = 1*8 = 8(10)
+4		0	0*2(4) = 0*16 = 0(10)
+5		1	1*2(5) = 1*32 = 32(10)
+
+Summen av verdiene er nå:
+ 32 + 8 + 2 = 42(10) = 101010(2)	
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+OPPGAVE B
+Hexadesimal til desimal
+Utregningen fra et desimalt tall til et heksadesimalt tall følger de samme linjene som konvertering
+fra et desimalt tall til et binært tall, bortsett fra at vi deler på 16 i stedet for 2. Algoritmen blir da:
+Del tallet på 16 (heltallsdivisjon). Får vi rest?
+– Ja: skriv ned resten
+– Nei: skriv 0
+• Start på toppen igjen, helt til svaret på heltallsdivisjonen er 0
+Det heksadesimale tallsystem har grunntallet 16, og har verdiene 0 til og med 9, og a til og med
+f.  Slik oversetter man bokstavene om til tall:
+Heksadesimal 	Desimal
+A 		10
+B 		11
+C 		12
+D 		13
+E 		14
+F 		15
+Vi bruker igjen formelen: verdi = siffer ∗ grunntallposisjon
+F.eks.: 
+DEF (16)
+Posisjon	Siffer		Utregning
+0		F		15*16(0) = 15*0 = 15(10)
+1		E		14*16(1) = 14*16 = 224(10)
+2		D		13*16(2) = 13*256 = 3328(10)
+Da blir summen av verdiene = 15 + 224 + 3328 = 3567(10) = DEF(16).
