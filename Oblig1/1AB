@@ -19,8 +19,7 @@ Hex	D	2	A	D2
 Slik går man fra binært til hexadesimal.
 
 Den enkleste måten å gå fra et heksadesimalt tall til et binært tall er ved å rett og slett se på hvert enkelt siffer 
-i det heksadesimale tallet og finne det tilsvarende binære tallet, 
-for så å slå de binære tallene
+i det heksadesimale tallet og finne det tilsvarende binære tallet, for så å slå de binære tallene
 vi har funnet sammen i akkurat den samme rekkefølgen som de sto i det heksadesimale tallet. 
 
 Eks: 
