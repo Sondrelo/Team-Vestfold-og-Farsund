@@ -12,3 +12,6 @@ func main() {
 
 ved SIGINT signal kommando CTRL + C og CTRL + Break får vi exit status 2
 interrupt kommandoen "delete" fungerer ikke i vår terminal.
+
+
+<img src="https://user-images.githubusercontent.com/35763714/36151603-231996f6-10c8-11e8-8cc2-9e7f53c86ebd.png" width="90%"></img> 
