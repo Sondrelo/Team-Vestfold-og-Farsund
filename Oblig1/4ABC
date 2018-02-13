@@ -1,0 +1,93 @@
+Oppgave 4 A og B) 
+--------------------------------------------------------------------------------------------------------------------------
+
+- Kode for iterateOverExtendedASCIIStringLiteral() og ExtendedASCIIText
+
+package main
+
+import (
+	"fmt"
+)
+
+const ascii = "\x22\x20\x80\x20\xF7\x20\xBE\x20\x64\x6F\x6C\x6C\x61\x72\x20\x22"
+
+func main() {
+	iterateOverExtendedASCIIStringLiteral()
+	ExtendedASCIIText(ascii)
+}
+	
+func iterateOverExtendedASCIIStringLiteral(){
+	for i := 128; i <= 255; i++ {
+		fmt.Printf("%X %c %b \n", i, i, i)
+	}
+}
+
+func ExtendedASCIIText(tekst string){
+
+	a := tekst
+	for i := 0; i < len(a); i++ {
+		fmt.Printf("%c", a[i])
+
+	}
+}
+
+Svar til oppgave A)
+--------------------------------------------------------------------------------------------------------------------------
+
+"analyser utskriften (spesielt for bytes fra 0x80 til 0x9F)"
+ 
+Vi ser av utskriften at bytes fra 0x80 til 0xFF skriver Unicode fra Extended Ascii table. Samtlige gruppemedlemmer bruker lignende
+windows datamaskiner og får ikke presentert symbolene. Hadde vi hatt Mac eller annen maskin som kan lese ISO 8859-1 ville vi sett
+symbolene.
+ 
+Svar til oppgave B) 
+--------------------------------------------------------------------------------------------------------------------------
+funksjonen ExtendedASCIIText () skriver " € ÷ ¾ dollar ". Våre datamaskiner og samtlige terminaler vil ikke skrive EUROtegn.
+
+Oppgave C)
+--------------------------------------------------------------------------------------------------------------------------
+package main
+
+import (
+	"testing"
+	"fmt"
+)
+
+func TestExtendedASCIIText(t *testing.T) {
+	for i := 0; i<len(ascii);i++ {
+		if (ascii[i] < 128) {
+			t.Fail()
+			fmt.Println("ERROR, value not in extended ASCII")
+		}
+	}
+}
+
+Svar til oppgave C)
+--------------------------------------------------------------------------------------------------------------------------
+- Testen vår failer, ettersom at kun tegnet for EURO er av Extended ASCII.  
+
+C:\Users\Jarl\Documents\IS-105\Oblig1\src\ascii>go test
+ERROR, value not in extended ASCII
+ERROR, value not in extended ASCII
+ERROR, value not in extended ASCII
+ERROR, value not in extended ASCII
+ERROR, value not in extended ASCII
+ERROR, value not in extended ASCII
+ERROR, value not in extended ASCII
+ERROR, value not in extended ASCII
+ERROR, value not in extended ASCII
+ERROR, value not in extended ASCII
+ERROR, value not in extended ASCII
+ERROR, value not in extended ASCII
+ERROR, value not in extended ASCII
+--- FAIL: TestExtendedASCIIText (0.01s)
+FAIL
+exit status 1
+
+Koden skriver "ERROR, value not in extended ASCII" for hvert symbol som ikke er fra extended. f.eks. ["], [dollar] og [mellomrom]
+
+Vi kjørte en test kun med Extended ASCII for å teste koden. (x80\x81\x82\x83\x84) og fikk resultat:
+
+C:\Users\Jarl\Documents\IS-105\Oblig1\src\ascii>go test
+PASS
+ok      _/C_/Users/Jarl/Documents/IS-105/Oblig1/src/ascii       0.131s
