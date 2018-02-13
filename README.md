@@ -13,12 +13,12 @@ Eivind Pedersen   Eivip17@uia.no
 # Oppgave 1. 
 Binære tall, Hexadesimaltall og Desimaltall
 
-https://github.com/Genijarl/Team-Vestfold-og-Farsund/blob/master/Oblig1/1AB
+https://github.com/Genijarl/Team-Vestfold-og-Farsund/blob/Oblig1/Oblig1/1AB
 
 # Oppgave 2.
 Forstå algoritmer og utføre “benchmark”-tester på koden
 
-https://github.com/Genijarl/Team-Vestfold-og-Farsund/blob/master/Oblig1/2ABC
+https://github.com/Genijarl/Team-Vestfold-og-Farsund/blob/Oblig1/Oblig1/2ABC
 
 # Oppgave 3
 Forstå prosessadministrajon på et platform
