@@ -18,13 +18,15 @@ https://github.com/Genijarl/Team-Vestfold-og-Farsund/blob/Oblig1/Oblig1/1AB
 # Oppgave 2.
 Forstå algoritmer og utføre “benchmark”-tester på koden
 
-<img src="https://user-images.githubusercontent.com/35763714/36151603-231996f6-10c8-11e8-8cc2-9e7f53c86ebd.png" width="90%"></img> 
+
 
 https://github.com/Genijarl/Team-Vestfold-og-Farsund/blob/Oblig1/Oblig1/2ABC
 
 https://github.com/Genijarl/Team-Vestfold-og-Farsund/blob/master/Oblig1/sorting.go
 
 https://github.com/Genijarl/Team-Vestfold-og-Farsund/blob/master/Oblig1/sorting_test.go
+
+<img src="https://user-images.githubusercontent.com/35763714/36151603-231996f6-10c8-11e8-8cc2-9e7f53c86ebd.png" width="90%"></img> 
 
 # Oppgave 3
 Forstå prosessadministrajon på et platform
