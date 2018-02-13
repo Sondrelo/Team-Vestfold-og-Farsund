@@ -1,0 +1,14 @@
+3. Forstå prosessadministrajon på et platform
+-------------------------------------------------------------------------------------------------------------------------
+Vi har lagd en evig løkke:
+
+package main
+
+
+func main() {
+		for {
+		}
+}
+
+ved SIGINT signal kommando CTRL + C og CTRL + Break får vi exit status 2
+interrupt kommandoen "delete" fungerer ikke i vår terminal.
