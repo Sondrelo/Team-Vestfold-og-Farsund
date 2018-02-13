@@ -1,8 +1,8 @@
 # Team-Vestfold-og-Farsund
-# Jarl Andreassen   Jarla17@uia.no
-# Vegard Mathisen   Vegasm17@uia.no
-# Eivind Pedersen   Eivip17@uia.no
-# Øyvind Hammer     Øyvinm15@uia.no
+Jarl Andreassen   Jarla17@uia.no
+Vegard Mathisen   Vegasm17@uia.no
+Eivind Pedersen   Eivip17@uia.no
+Øyvind Hammer     Øyvinm15@uia.no
 
 # Obligatorisk oppgave 1
 
