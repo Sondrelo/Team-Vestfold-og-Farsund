@@ -20,6 +20,10 @@ Forstå algoritmer og utføre “benchmark”-tester på koden
 
 https://github.com/Genijarl/Team-Vestfold-og-Farsund/blob/Oblig1/Oblig1/2ABC
 
+https://github.com/Genijarl/Team-Vestfold-og-Farsund/blob/master/Oblig1/sorting.go
+
+https://github.com/Genijarl/Team-Vestfold-og-Farsund/blob/master/Oblig1/sorting_test.go
+
 # Oppgave 3
 Forstå prosessadministrajon på et platform
 
