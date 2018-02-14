@@ -20,7 +20,7 @@ func main() {
 		os.Exit(1)
 	}()
 
-	//Loop som teller uendelig oppover til vi velger å avbrute/stoppe koden
+	//Loop som teller uendelig oppover til vi velger å avbryte/stoppe koden
 	for i :=0;;i++ {
 		fmt.Println(i)
 	}
