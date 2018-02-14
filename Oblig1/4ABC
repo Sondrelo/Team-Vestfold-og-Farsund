@@ -7,7 +7,7 @@ Oppgave A)
 --------------------------------------------------------------------------------------------------------------------------
 
 
-"analyser utskriften (spesielt for bytes fra 0x80 til 0x9F)"
+"Analyser utskriften (spesielt for bytes fra 0x80 til 0x9F)"
  
 Vi ser av utskriften at bytes fra 0x80 til 0xFF skriver Unicode fra Extended Ascii table. Samtlige gruppemedlemmer bruker lignende
 windows datamaskiner og får ikke presentert symbolene. Hadde vi hatt Mac eller annen maskin som kan lese ISO 8859-1 ville vi sett
@@ -18,7 +18,7 @@ Kunne kanskje implementert windows 1252 encoder i koden her. (cp1252)
  
 Oppgave B) 
 --------------------------------------------------------------------------------------------------------------------------
-funksjonen ExtendedASCIIText () skriver " € ÷ ¾ dollar ". Våre datamaskiner og samtlige terminaler vil ikke skrive EUROtegn.
+Funksjonen ExtendedASCIIText () skriver " € ÷ ¾ dollar ". Våre datamaskiner og samtlige terminaler vil ikke skrive EUROtegn.
 
 
 Oppgave C)
