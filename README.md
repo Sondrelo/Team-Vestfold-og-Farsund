@@ -33,6 +33,8 @@ Forstå prosessadministrajon på et platform
 
 https://github.com/Genijarl/Team-Vestfold-og-Farsund/blob/Oblig1/Oblig1/3
 
+https://github.com/Genijarl/Team-Vestfold-og-Farsund/blob/master/Oblig1/evigl%C3%B8kke.go
+
 
 
 # Oppgave 4
