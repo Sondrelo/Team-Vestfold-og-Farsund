@@ -31,7 +31,7 @@ https://github.com/Genijarl/Team-Vestfold-og-Farsund/blob/master/Oblig1/sorting_
 # Oppgave 3
 Forstå prosessadministrajon på et platform
 
-https://github.com/Genijarl/Team-Vestfold-og-Farsund/blob/Oblig1/Oblig1/3
+https://github.com/Genijarl/Team-Vestfold-og-Farsund/blob/master/Oblig1/3
 
 https://github.com/Genijarl/Team-Vestfold-og-Farsund/blob/master/Oblig1/evigl%C3%B8kke.go
 
