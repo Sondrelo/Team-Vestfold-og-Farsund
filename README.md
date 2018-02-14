@@ -20,7 +20,7 @@ Forstå algoritmer og utføre “benchmark”-tester på koden
 
 
 
-https://github.com/Genijarl/Team-Vestfold-og-Farsund/blob/Oblig1/Oblig1/2ABC
+https://github.com/Genijarl/Team-Vestfold-og-Farsund/blob/master/Oblig1/2ABC
 
 https://github.com/Genijarl/Team-Vestfold-og-Farsund/blob/master/Oblig1/sorting.go
 
