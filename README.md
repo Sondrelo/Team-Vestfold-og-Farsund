@@ -39,3 +39,7 @@ https://github.com/Genijarl/Team-Vestfold-og-Farsund/blob/Oblig1/Oblig1/3
 Typografiske symboler
 
 https://github.com/Genijarl/Team-Vestfold-og-Farsund/blob/Oblig1/Oblig1/4ABC
+
+https://github.com/Genijarl/Team-Vestfold-og-Farsund/blob/master/Oblig1/ascii.go
+
+https://github.com/Genijarl/Team-Vestfold-og-Farsund/blob/master/Oblig1/iso_test.go
