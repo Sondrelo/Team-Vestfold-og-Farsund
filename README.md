@@ -40,7 +40,7 @@ https://github.com/Genijarl/Team-Vestfold-og-Farsund/blob/master/Oblig1/evigl%C3
 # Oppgave 4
 Typografiske symboler
 
-https://github.com/Genijarl/Team-Vestfold-og-Farsund/blob/Oblig1/Oblig1/4ABC
+https://github.com/Genijarl/Team-Vestfold-og-Farsund/blob/master/Oblig1/4ABC
 
 https://github.com/Genijarl/Team-Vestfold-og-Farsund/blob/master/Oblig1/ascii.go
 
