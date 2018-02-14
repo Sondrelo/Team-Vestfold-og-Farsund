@@ -6,7 +6,7 @@ Vegard Mathisen   Vegasm17@uia.no
 
 Eivind Pedersen   Eivip17@uia.no
 
-Øyvind Hammer     Øyvinm15@uia.no
+Øyvind Hammer     Oyvinm15@uia.no
 
 # Obligatorisk oppgave 1
 
