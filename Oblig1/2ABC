@@ -2,49 +2,15 @@
 ------------------------------------------------------------------------------------------------------------------------------------
 Oppgave A) 
 
-func Bubble_sort_modified(list []int) {
-	n := len(list)
-	swapped := true
-	for swapped {
-		swapped = false
-		for i := 1; i < n-1; i++ {
-			if list[i-1] > list[i] {
-				// swap values using Go's tuple assignment
-				list[i], list[i-1] = list[i-1], list[i]
-				swapped = true
-			}
-		}
-	}
+https://github.com/Genijarl/Team-Vestfold-og-Farsund/blob/master/Oblig1/sorting.go
 
-
-}
-
+------------------------------------------------------------------------------------------------------------------------------------
 Oppgave B)
+https://github.com/Genijarl/Team-Vestfold-og-Farsund/blob/master/Oblig1/sorting_test.go
+
 ------------------------------------------------------------------------------------------------------------------------------------
-// Skriv "benchmark"-tester for benchmarkBSortModified funksjonen
-// Skriv en ny testfunksjon benchmarkBSortModified
-func BenchmarkBSortModified100(b *testing.B) {
-	benchmarkBSortModified(100, b)
-}
-
-func BenchmarkBSortModified1000(b *testing.B) {
-	benchmarkBSortModified(1000, b)
-}
-
-func BenchmarkBSortModified10000(b *testing.B) {
-	benchmarkBSortModified(10000, b)
-}
-
-func benchmarkBSortModified(i int, b *testing.B) {
-	for j := 0; j < b.N; j++ {
-		b.StopTimer()
-		values := perm(i)
-		b.StartTimer()
-		Bubble_sort_modified(values)
-	}
-  
 Oppgave C)
-------------------------------------------------------------------------------------------------------------------------------------
+
 Benchmark						ns/op
 BenchmarkBSortModified100-4               100000	22545
 BenchmarkBSortModified1000-4                1000	1489716
@@ -56,8 +22,8 @@ BenchmarkQSort100-4                       500000	4858
 BenchmarkQSort1000-4                       30000	59841
 BenchmarkQSort10000-4                       1000	1791985
 
-Får ikke til å lime inn noen grafisk presentasjon, ei heller et bilde. Men, vi ser av nanosekund per operasjon ns/op 
-hvilke operasjoner som brukte kortest og lengst tid.
+Grafisk presentasjon i README.md fil
+https://github.com/Genijarl/Team-Vestfold-og-Farsund/blob/master/README.md
 
 BSortModified 100-4 brukte lengre tid enn eksempeloppgaven BSort 100-4. Qsort 100-4 gikk fortest av de 3.
 BSortModified 1000-4 var såvidt tregere enn Bsort 1000-4. Qsort 1000-4 var også her den kjappeste operasjonen.
