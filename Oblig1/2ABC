@@ -31,4 +31,6 @@ BsortModified 10000-4 var kjappere enn Bsort 10000-4 og Qsort10000-4 var kjappes
 
 Big-O:
 Forstår det slik fra grafen i http://bigocheatsheet.com/ at
-QuickSort algorytmen kan håndtere fler operasjoner over flere elementer enn Bubblesort og Bullesort modified.
+QuickSort algorytmen kan håndtere fler operasjoner over flere elementer enn Bubblesort og Bubblesort modified. Dette ser vi ved at
+bubblesort har et gjennomsnitt på Θ(n^2), mens quicksort har et gjennomsnitt på Θ(n log(n)). Θ(n^2) utfører mange fler opereasjoner 
+og behandler mange færre elementer enn Θ(n log(n)).
